@@ -82,3 +82,6 @@ Read [ARCHITECTURE.md](ARCHITECTURE.md), [DATABASE.md](DATABASE.md), [API.md](AP
 ## Access and payment extension
 
 See [Access and payments](docs/ACCESS_AND_PAYMENTS.md) for the new owner/staff permission controls, gym feature overrides, resource quotas, installment payments, staff session attendance, optional WhatsApp preparation and workout editing. Migration `005_access_and_business.sql` is additive; it backfills historical agreed fees from completed payments and adds RLS-protected expense, request and login-history tables.
+# GitHub synchronization
+
+Code is maintained at [abuzarpathan446-ui/GymOS](https://github.com/abuzarpathan446-ui/GymOS). See [GitHub sync setup and controls](docs/GIT_SYNC.md) for automatic commits after validation, Windows startup, status logs, pausing and manual synchronization. Local databases, credentials and backups are excluded from Git.
