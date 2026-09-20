@@ -1,0 +1,11 @@
+# Customer data and service boundaries
+
+This describes current product behavior. It is not a commercial service agreement or a claim of regulatory compliance. Publish reviewed customer terms and a privacy/retention policy before selling access.
+
+- Gym business records belong to the customer organization. Authorized owners/managers can export scoped member, payment and attendance CSV data. Receipts are available as PDF. CSV uses ordinary documented columns rather than a proprietary format.
+- Subscription cancellation and quota limits do not delete customer records. Cancelling currently stops entitled write operations immediately. The owner can still access ordinary core data and exports while the organization remains active. Platform suspension revokes sessions and blocks tenant operations; recovery and export require operator assistance.
+- Deactivated members retain membership, attendance and payment history. A separate privacy deletion/anonymization workflow is not implemented. There is no automatic post-cancellation purge in the current code. Define and implement a contractual retention period before launch.
+- Full-platform backups are encrypted and accessible to infrastructure operators, not gym users. They contain personal data and password hashes. Restores require an isolated empty database. Local snapshots need off-host replication and retention management; the code does not promise an uptime or recovery-time SLA.
+- Staff control click-to-WhatsApp sending. Automated WhatsApp sending is not implemented. Messaging provider charges, provider approvals, consent handling, and usage caps must be agreed and implemented before enabling that service. No subscription promises unlimited free third-party messaging.
+- Payments entered in GymOS record money already received by the gym. GymOS does not currently verify bank/UPI/card settlement, charge customers, reconcile balances, or process refunds. Resolve payment disputes with the actual payment provider and gym records.
+- The current build has no contracted support scope, uptime guarantee or dedicated infrastructure service. Define support contacts, support hours, incident escalation, maintenance windows, data access responsibilities and export assistance before commercial onboarding.
